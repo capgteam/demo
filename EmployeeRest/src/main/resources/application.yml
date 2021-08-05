@@ -1,0 +1,15 @@
+server:
+  port: 8085
+  
+  
+spring:
+  application:    name: employee-rest  datasource:    url: jdbc:mysql://localhost:3306/sbdb
+    username: root
+    password: admin
+  jpa:    generate-ddl: true
+    show-sql: true
+   session:    store-type: jdbc
+    jdbc:      initialize-schema: always
+     # table-name: spring_session 
+    timeout: 900
+      
